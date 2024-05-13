@@ -1,0 +1,38 @@
+print("Semana No. 12: Ejercicio 1")
+print("menu", "a. sumatoria", "b. factorial", "c. tablas de multiplicar", "d. numero perfecto", sep="\n")
+
+opcion = input("Ingrese su opción")
+
+match opcion:
+    case "a":
+        n = int(input("ingrese un numero entero positivo"))
+        if(n <= 0):
+            print("Error, numero debe ser mayor a cero")
+
+        contador = 1
+        sumatoria = 0
+        while(contador <= n):
+            sumatoria += contador
+            contador += 1
+
+
+        print(f"Sumatoria:  {sumatoria}")
+
+    case"b":
+        0
+    case"c":
+        tituloCol = "\t"
+        for col in range(1, 11):
+                tituloCol += str(col) + "\t"
+        print(tituloCol)
+
+        textofila = ""
+        for fila in range(1, 11):
+             textofila += str(fila) + "\t" 
+
+             for col in range(1, 11):
+                  textofila += str(fila * col) + "\t"
+             print(fila)
+
+             print(textofila)
+             textofilla = ""

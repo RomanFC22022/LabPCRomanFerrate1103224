@@ -1,0 +1,27 @@
+x = 0
+y = 0
+
+def moverposicion(cantx, canty):
+    x += cantx
+    y += canty
+
+
+opcion = "a"
+while(opcion is "e"):
+    print("Menu")
+    print("a. sube", "b. baja", "c. izquierda", "d. derecha", "e. salir", sep = "\t\n")
+    opcion = input("Ingrese su opcion")
+
+    match opcion:
+        case "a":
+            moverposicion(0,1)
+        case "b":
+            moverposicion(0,-1)
+        case "c":
+            moverposicion(-1,0)
+        case "d":
+            moverposicion(1,0)
+        case _:
+            print("Ingrese una opcion valida")
+
+    print(f"La poscicion actual es: [(x)][(y)]")

@@ -1,0 +1,47 @@
+import random
+
+print("Semana No. 16: Ejercicio 1")
+
+lista = []
+
+for x in range(10):
+    lista.append(random.randit(0,10))
+
+opcion = "a"
+
+while(opcion != "e"):
+    print("Menu")
+    print("a. Mostrar numeros", " b. Promedio", "c. longitud", "d. posicion")
+    opcion = input("Ingrese su opción: ")
+
+match opcion:
+    case "a": #opcion mostrarv numeros
+        for x in range(len:(lista)):
+        print(f"No. {x}: {lista[x]}")
+    
+    case "b": #opcion promedio
+        sumatoria = 0
+        for x in range(len(lista)):
+            sumatoria += lista{x}
+        promedio = sumatoria / len(lista)
+        print(f"----Promedio: {promedio}")
+    
+    case "c":
+        print("Longitud")
+    case "d":
+        print("a")
+
+
+print("Semana No. 16: Ejercicio 2")
+
+cantfilas = int(input("Ingrese la cantidad de filas"))
+cantcols = int(input("Ingrese la cantidad de columnas"))
+mayor = 0
+
+matriz = [[0 for in range(cantcols)] for y in range(cantfilas)]
+
+for xfilas in range(cantfilas):
+    for xcols in range(cantcols):
+        matriz[xfilas][xcols] = random.randit(0,1000)
+        if(matriz[xfilas][xcols] > mayor):
+            mayor = matriz[xfilas][xcols]
